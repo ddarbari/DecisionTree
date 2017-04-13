@@ -73,7 +73,12 @@ def entropy(attribute, data):
 
 #Calculates the best attribute to be chosen
 def choose_best_attribute(attributelist, data):
-    
+    maxEntropy = 0
+    bestAttribute = -1
+    for attributeId in attributelist:
+        if (entropy > maxEntropy):
+            maxEntropy = entropy 
+            bestAttribute = attributeId
     return 2
 
 
